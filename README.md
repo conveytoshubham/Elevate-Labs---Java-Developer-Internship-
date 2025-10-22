@@ -33,7 +33,7 @@ Designed for beginner ease-of-use, handles invalid input gracefully.
 • Handles division by zero
 
 • Input validation for numbers
----
+
 Files:
 ----
 `Calculator.java` -> Main Source Code

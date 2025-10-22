@@ -1,23 +1,22 @@
-# Elevate-Labs Java-Developer-Internship
+**🚀 Elevate Labs Internship**
 ---
 Repository showcasing my internship journey at Elevate Labs - including hands-on projects, daily tasks, and practical applications of Java development concepts.
---
-📘 About This Internship
+---
+**📘 About This Internship**
 
-The Elevate Labs Internship focuses on hands-on learning through real-world coding challenges, project-based tasks, and guided mentorship.
+• The Elevate Labs Internship focuses on hands-on learning through real-world coding challenges, project-based tasks, and guided mentorship.
 
-Throughout the program, I'm improving my skills in:
+• Throughout the program, I'm improving my skills in:
 
-Core Java Programming
+• Core Java Programming
 
-Object-Oriented Programming (OOP)
+• Object-Oriented Programming (OOP)
 
-Recursion and Data Structures
+• Recursion and Data Structures
 
-File Handling and Exception Handling
+• File Handling and Exception Handling
 
-Building Mini Java Projects
-
+✅ **Internship Tasks**
 📅 Day 1: User-Friendly Java Calculator
 🚀 Overview
 A command-line calculator supporting basic arithmetic operations:
@@ -25,18 +24,19 @@ Addition, Subtraction, Multiplication, Division
 Designed for beginner ease-of-use, handles invalid input gracefully.
 
 💡 Features
-Menu-driven interface
+• Menu-driven interface
 
-Supports +, -, *, /
+• Supports +, -, *, /
 
-Handles division by zero
+• Handles division by zero
 
-Input validation for numbers
+• Input validation for numbers
 
 🛠 How to Run
+--
 Open Calculator.java in your IDE.
 
-Compile:
+• Compile:
 
 text
 javac Calculator.java
@@ -45,28 +45,3 @@ Run:
 text
 java Calculator
 
-# Java Mini Projects – Learning Journey 🚀
-
----
-
-## 📅 Day 1: User-Friendly Java Calculator
-
-... (content here)
-
----
-
-## 📅 Day 2: Student Management System
-
-... (content here)
-
----
-
-## 🗂 Project Structure
-
-... (content here)
-
----
-
-## 🏆 Progress Tracker
-
-... (content here)

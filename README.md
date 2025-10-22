@@ -17,7 +17,7 @@ Repository showcasing my internship journey at Elevate Labs - including hands-on
 • File Handling and Exception Handling
 
 ✅ **Internship Tasks**
-
+---
 📅 Day 1: User-Friendly Java Calculator
 🚀 Overview
 A command-line calculator supporting basic arithmetic operations:
@@ -25,10 +25,12 @@ Addition, Subtraction, Multiplication, Division
 Designed for beginner ease-of-use, handles invalid input gracefully.
 
 💡 Features
+---
 • Menu-driven interface
 • Supports +, -, *, /
 • Handles division by zero
 • Input validation for numbers
 
 Files:
-Calculator.java -> Main Source Code
+---
+'Calculator.java' -> Main Source Code

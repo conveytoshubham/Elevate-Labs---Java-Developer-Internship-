@@ -27,10 +27,13 @@ Designed for beginner ease-of-use, handles invalid input gracefully.
 💡 Features
 ---
 • Menu-driven interface
-• Supports +, -, *, /
-• Handles division by zero
-• Input validation for numbers
 
+• Supports +, -, *, /
+
+• Handles division by zero
+
+• Input validation for numbers
+---
 Files:
 ----
 `Calculator.java` -> Main Source Code

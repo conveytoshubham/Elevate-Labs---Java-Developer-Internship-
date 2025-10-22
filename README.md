@@ -43,3 +43,29 @@ Run:
 
 text
 java Calculator
+
+# Java Mini Projects – Learning Journey 🚀
+
+---
+
+## 📅 Day 1: User-Friendly Java Calculator
+
+... (content here)
+
+---
+
+## 📅 Day 2: Student Management System
+
+... (content here)
+
+---
+
+## 🗂 Project Structure
+
+... (content here)
+
+---
+
+## 🏆 Progress Tracker
+
+... (content here)

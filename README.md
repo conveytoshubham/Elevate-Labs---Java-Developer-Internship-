@@ -69,9 +69,11 @@ Features:
 
 💻 How to Run
 ---
-Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
-Compile the main file:
-javac 'StudentManagementsystem.java'
+• Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
+
+• Compile the main file:
+
+• javac 'StudentManagementsystem.java'
 ----
 📅 Day 3 — Task 3: Library Management System (Java)
 ---
@@ -107,9 +109,11 @@ Features:
 --
 💻 How to Run
 ---
-Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
-Compile the main file:
-javac 'LibraryManagementsystem.java'
+• Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
+
+• Compile the main file:
+
+• javac 'LibraryManagementsystem.java'
 ----
 📅 Day 4 — Task 4: Notes App (Java CLI)
 ----
@@ -139,6 +143,8 @@ Add, view, and delete notes through a menu-driven interface
 
 💻 How to Run
 ---
-Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
-Compile the main file:
-javac 'LibraryManagementsystem.java'
+• Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
+
+• Compile the main file:
+
+• javac 'LibraryManagementsystem.java'

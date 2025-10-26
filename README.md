@@ -63,8 +63,9 @@ Built a menu-driven console application with a logical user flow
 Open the project in VS Code, IntelliJ IDEA, or any Java IDE.
 Compile the main file:
 javac 'StudentManagementsystem.java'
-
+----
 📅 Day 3 — Task 3: Library Management System (Java)
+---
 🧾 Description:
 Developed a CLI-based Library Management System that allows users to manage books and users efficiently — including adding, issuing, and returning books.
 

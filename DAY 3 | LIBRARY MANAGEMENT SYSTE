@@ -1,0 +1,171 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Book {
+    private int id;
+    private String title;
+    private String author;
+    private boolean isIssued;
+    private User issuedTo;
+
+    public Book(int id, String title, String author) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.isIssued = false;
+        this.issuedTo = null;
+    }
+
+    public void issue(User user) {
+        isIssued = true;
+        issuedTo = user;
+    }
+
+    public void returnBook() {
+        isIssued = false;
+        issuedTo = null;
+    }
+
+    public boolean isIssued() { return isIssued; }
+    public int getId() { return id; }
+
+    @Override
+    public String toString() {
+        String userName = (issuedTo == null) ? "-" : issuedTo.getName();
+        return String.format("| %-5d | %-20s | %-20s | %-10s | %-15s |",id, title, author, isIssued, userName);
+    }
+}
+
+class User {
+    private int id;
+    private String name;
+
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() { return id; }
+    public String getName() { return name; }
+
+    @Override
+    public String toString() {
+        return String.format("| %-5d | %-20s |", id, name);
+    }
+}
+
+class Library {
+    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<User> users = new ArrayList<>();
+    private Scanner sc = new Scanner(System.in);
+
+    public void addBook() {
+        System.out.print("Enter Book ID: ");
+        int id = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Book Title: ");
+        String title = sc.nextLine();
+        System.out.print("Enter Author: ");
+        String author = sc.nextLine();
+        books.add(new Book(id, title, author));
+        System.out.println("Book added successfully!\n");
+    }
+
+    public void addUser() {
+        System.out.print("Enter User ID: ");
+        int id = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter User Name: ");
+        String name = sc.nextLine();
+        users.add(new User(id, name));
+        System.out.println("User registered successfully!\n");
+    }
+
+    public void displayBooks() {
+        System.out.println("--------------------------------------------------------------------------------------------");
+        System.out.printf("| %-5s | %-20s | %-20s | %-10s | %-15s |\n", "ID", "Title", "Author", "Issued", "Issued To");
+        System.out.println("--------------------------------------------------------------------------------------------");
+        for (Book b : books) System.out.println(b);
+        System.out.println("--------------------------------------------------------------------------------------------\n");
+    }
+
+    public void displayUsers() {
+        System.out.println("-------------------------------------");
+        System.out.printf("| %-5s | %-20s |\n", "ID", "Name");
+        System.out.println("-------------------------------------");
+        for (User u : users) System.out.println(u);
+        System.out.println("-------------------------------------\n");
+    }
+
+    public void issueBook() {
+        System.out.print("Enter Book ID to issue: ");
+        int bookId = sc.nextInt();
+        System.out.print("Enter User ID: ");
+        int userId = sc.nextInt();
+
+        Book bookToIssue = null;
+        User user = null;
+
+        for (Book b : books) if (b.getId() == bookId) bookToIssue = b;
+        for (User u : users) if (u.getId() == userId) user = u;
+
+        if (bookToIssue == null || user == null) {
+            System.out.println("Invalid Book ID or User ID!\n");
+            return;
+        }
+
+        if (bookToIssue.isIssued()) {
+            System.out.println("Book already issued!\n");
+            return;
+        }
+
+        bookToIssue.issue(user);
+        System.out.println("Book issued to " + user.getName() + "!\n");
+    }
+
+    public void returnBook() {
+        System.out.print("Enter Book ID to return: ");
+        int id = sc.nextInt();
+
+        for (Book b : books) {
+            if (b.getId() == id && b.isIssued()) {
+                b.returnBook();
+                System.out.println("Book returned successfully!\n");
+                return;
+            }
+        }
+        System.out.println("Book not found or already returned!\n");
+    }
+}
+
+public class LibraryManagementSystem { 
+    public static void main(String[] args) {
+        Library library = new Library();
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("=== Library Menu ===");
+            System.out.println("1. Add Book");
+            System.out.println("2. Add User");
+            System.out.println("3. Display Books");
+            System.out.println("4. Display Users");
+            System.out.println("5. Issue Book");
+            System.out.println("6. Return Book");
+            System.out.println("0. Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1 -> library.addBook();
+                case 2 -> library.addUser();
+                case 3 -> library.displayBooks();
+                case 4 -> library.displayUsers();
+                case 5 -> library.issueBook();
+                case 6 -> library.returnBook();
+                case 0 -> System.out.println("Exiting...");
+                default -> System.out.println("Invalid choice!\n");
+            }
+        } while (choice != 0);
+    }
+}

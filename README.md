@@ -39,6 +39,7 @@ Designed for beginner ease-of-use, handles invalid input gracefully.
 Files:
 ----
 `Calculator.java` -> Main Source Code
+
 ----
 📅 Day 2 — Task 2: Student Record Management System
 --
@@ -74,7 +75,8 @@ Features:
 • Compile the main file:
 
 • javac 'StudentManagementsystem.java'
-----
+
+---
 📅 Day 3 — Task 3: Library Management System (Java)
 ---
 🧾 Description:
@@ -114,7 +116,8 @@ Features:
 • Compile the main file:
 
 • javac 'LibraryManagementsystem.java'
-----
+
+---
 📅 Day 4 — Task 4: Notes App (Java CLI)
 ----
 🧾 Description:
